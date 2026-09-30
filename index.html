@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Triangle Viewer</title>
+  </head>
+  <body>
+    <main>
+      <h1>不依赖 WebGL 的三角网格查看器</h1>
+      <div class="toolbar">
+        <button id="small" type="button">320×240</button>
+        <button id="large" type="button">640×480</button>
+        <button id="pause" type="button">暂停旋转</button>
+        <span id="info"></span>
+      </div>
+      <canvas id="canvas" width="320" height="240"></canvas>
+      <p>拖拽旋转，滚轮前后移动；点击像素会查询当前已提交帧的三角形 ID 缓冲。</p>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
